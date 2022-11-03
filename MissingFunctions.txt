@@ -1,0 +1,37 @@
+isalpha    X
+isdigit    X
+isalnum    X
+isascii    X
+isprint    X
+strlen     X
+memset
+bzero
+memcpy
+memmove
+strlcpy    X
+strlcat    X
+toupper    X
+tolower    X
+strchr     X
+strncmp    X
+memchr
+memcmp
+strnstr    X
+atoi       X
+calloc
+strdup
+
+Makefile   ONGOING
+libft.h    ONGOING
+
+substr
+strjoin
+strtrim
+split
+itoa
+strmapi
+striteri
+putchar_fd
+putstr_fd
+putendl_fd
+putnbr_fd
