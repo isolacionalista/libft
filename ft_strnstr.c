@@ -6,7 +6,7 @@
 /*   By: imendonc <imendonc@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 15:28:23 by imendonc          #+#    #+#             */
-/*   Updated: 2022/11/03 18:39:57 by imendonc         ###   ########.fr       */
+/*   Updated: 2022/11/04 14:47:27 by imendonc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,19 +15,21 @@
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *str, const char *str2, int lenght)
+char	*ft_strnstr(const char *str, const char *str2, size_t lenght)
 {
-	int	a;
-	int	b;
+	size_t	a;
+	size_t	b;
 
-	a = 0;
-	b = 0;
-	if (!str)
+	if (!str || !str2)
 		return ((char *)str);
-	while (str[a] != '\0' && a < lenght)
+	if (!str2)
+		return ((char *)str2);
+	a = 0;
+	while (str[a] && a < lenght)
 	{
+		b = 0;
 		while (str[a + b] == str2[b]
-			&& str[a + b] != '\0')
+			&& a + b < lenght && str[a + b] && str2[b])
 			b++;
 		if (!str2[b])
 			return ((char *)str + a);

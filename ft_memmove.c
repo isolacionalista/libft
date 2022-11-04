@@ -1,23 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: imendonc <imendonc@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/27 12:22:42 by imendonc          #+#    #+#             */
-/*   Updated: 2022/11/04 13:31:39 by imendonc         ###   ########.fr       */
+/*   Created: 2022/11/04 17:51:57 by imendonc          #+#    #+#             */
+/*   Updated: 2022/11/04 18:16:18 by imendonc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//testa se e ascii
-//#include <ctype.h>
-
 #include "libft.h"
 
-int	ft_isascii(int c)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	if (c >= 0 && c <= 127)
-		return (1);
-	return (0);
+	char	*desti;
+	char	*temp;
+	char	*srci;
+
+	if (!src && !dest)
+		return (0);
+	if (dest == src)
+		return (dest);
+	desti = (char *)dest;
+	srci = (char *)src;
+	while (n--)
+	{
+		desti[n] = temp[n];
+		srci[n] = temp[n];
+	}
+	return (dest);
 }

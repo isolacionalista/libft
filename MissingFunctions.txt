@@ -1,34 +1,35 @@
-isalpha    X
-isdigit    X
-isalnum    X
-isascii    X
-isprint    X
-strlen     X
-memset
+isalpha    **
+isdigit    **
+isalnum    **
+isascii    **
+isprint    **
+strlen     **
+memset     **
 bzero
-memcpy
-memmove
-strlcpy    X
-strlcat    X
-toupper    X
-tolower    X
-strchr     X
-strncmp    X
+memcpy     **
+memmove    X
+strlcpy    **
+strlcat    **
+toupper    **
+tolower    **
+strchr     **
+strrchr    **
+strncmp    **
 memchr
 memcmp
-strnstr    X
-atoi       X
+strnstr    **
+atoi       **
 calloc
 strdup
 
-Makefile   ONGOING
-libft.h    ONGOING
+Makefile   **
+libft.h    ONGOING (watch out for the norm)
 
 substr
 strjoin
 strtrim
 split
-itoa
+itoa       X
 strmapi
 striteri
 putchar_fd

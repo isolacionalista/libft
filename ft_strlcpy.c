@@ -6,7 +6,7 @@
 /*   By: imendonc <imendonc@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 13:42:45 by imendonc          #+#    #+#             */
-/*   Updated: 2022/11/03 18:39:33 by imendonc         ###   ########.fr       */
+/*   Updated: 2022/11/04 13:54:59 by imendonc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,26 +18,22 @@
 
 #include "libft.h"
 
-unsigned int	ft_strlcpy(char *dest, char *source, unsigned int len)
+size_t	ft_strlcpy(char *dest, char *source, size_t len)
 {
-	unsigned int	a;
-	unsigned int	b;
+	size_t	a;
 
 	a = 0;
-	b = 0;
-	while (source[a] != '\0')
+	if (len > 0)
 	{
-		a++;
-		if (len != '\0')
+		while (source[a] && a < (len - 1))
 		{
-			while (source[b] != '\0' && b < (len - 1))
-			{
-				dest[b] = source[b];
-				b++;
-			}
-			dest[b] = '\0';
+			dest[a] = source[a];
+			a++;
 		}
+		dest[a] = 0;
 	}
+	while (source[a])
+		a++;
 	return (a);
 }
 

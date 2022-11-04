@@ -6,7 +6,7 @@
 /*   By: imendonc <imendonc@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 14:53:07 by imendonc          #+#    #+#             */
-/*   Updated: 2022/11/03 18:39:21 by imendonc         ###   ########.fr       */
+/*   Updated: 2022/11/04 13:54:30 by imendonc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,28 +17,30 @@
 
 #include "libft.h"
 
-unsigned int	ft_strlcat(char *destino, char *source, unsigned int size)
+size_t	ft_strlcat(char *dest, char *source, size_t size)
 {
-	unsigned int	c;
-	unsigned int	d;
-	unsigned int	e;
+	size_t	c;
+	size_t	d;
+	size_t	size_dest;
+	size_t	size_source;
 
+	size_dest = ft_strlen(dest);
+	size_source = ft_strlen(source);
 	c = 0;
-	d = 0;
-	e = 0;
-	while (destino[c])
-		c++;
-	while (destino[d])
-		d++;
-	if (c >= size)
-		return (d + size);
-	while (source[e] && (c + d) < (size - 1))
+	d = size_dest;
+	if (size_dest < size - 1 && size > 0)
 	{
-		destino[c + e] = source[e];
-		e++;
+		while (source[c] && size_dest + c < size - 1)
+		{
+			dest[d] = source[c];
+			d++;
+			c++;
+		}
+		dest[d] = 0;
 	}
-	destino[c + d] = '\0';
-	return (d + c);
+	if (size_dest >= size)
+		size_dest = size;
+	return (size_dest + size_source);
 }
 
 //int main()

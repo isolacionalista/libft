@@ -6,7 +6,7 @@
 /*   By: imendonc <imendonc@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 17:31:46 by imendonc          #+#    #+#             */
-/*   Updated: 2022/11/03 18:37:47 by imendonc         ###   ########.fr       */
+/*   Updated: 2022/11/04 15:54:09 by imendonc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,12 +25,13 @@ static int	espacosbrancos(char *string, int *a)
 	b = 0;
 	while ((string[b] >= 9 && string[b] <= 13) || (string[b] == 32))
 		b++;
-	while (string[b] == 43 || string[b] == 45)
+	if (string[b] == 45)
 	{
-		if (string[b] == 45)
-			contador *= -1;
+		contador *= -1;
 		b++;
 	}
+	else if (string[b] == 43)
+		b++;
 	*a = b;
 	return (contador);
 }
@@ -49,6 +50,5 @@ int	ft_atoi(char *string)
 		resultado += string[b] - 48;
 		b++;
 	}
-	resultado *= sinal;
-	return (resultado);
+	return (resultado * sinal);
 }
