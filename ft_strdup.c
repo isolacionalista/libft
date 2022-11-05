@@ -1,24 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: imendonc <imendonc@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/05 16:17:43 by imendonc          #+#    #+#             */
-/*   Updated: 2022/11/05 17:35:10 by imendonc         ###   ########.fr       */
+/*   Created: 2022/11/05 17:34:58 by imendonc          #+#    #+#             */
+/*   Updated: 2022/11/05 18:03:12 by imendonc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_calloc(size_t nmemb, size_t size)
+char	*ft_strdup(const char *s)
 {
-	void	*rturn;
+	char	*rturn;
+	size_t	lenght;
 
-	rturn = malloc(size * nmemb);
+	lenght = ft_strlen(s) + 1;
+	rturn = malloc(sizeof(char) * lenght);
 	if (!rturn)
 		return (0);
-	ft_bzero(rturn, nmemb);
+	rturn = ft_memcpy(rturn, s, lenght);
 	return (rturn);
 }

@@ -6,7 +6,7 @@
 /*   By: imendonc <imendonc@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 23:45:27 by imendonc          #+#    #+#             */
-/*   Updated: 2022/11/05 16:22:17 by imendonc         ###   ########.fr       */
+/*   Updated: 2022/11/05 17:36:54 by imendonc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,7 @@ int			ft_strlen(const char *string);
 int			ft_strncmp(char *s1, char *s2, unsigned int n);
 char		*ft_strnstr(const char *str, const char *str2, size_t lenght);
 char		*ft_strrchr(const char *s, int c);
+char		*ft_strdup(const char *s);
 
 //numeros
 int			ft_atoi(char *string);
