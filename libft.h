@@ -6,7 +6,7 @@
 /*   By: imendonc <imendonc@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 23:45:27 by imendonc          #+#    #+#             */
-/*   Updated: 2022/11/05 14:47:40 by imendonc         ###   ########.fr       */
+/*   Updated: 2022/11/05 15:49:05 by imendonc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,7 @@ char		*ft_strrchr(const char *s, int c);
 //numeros
 int			ft_atoi(char *string);
 int			*ft_itoa(int n);
+void		ft_bzero(void *s, size_t n);
 
 //mem
 void		*ft_memset(void *s, int c, size_t n);

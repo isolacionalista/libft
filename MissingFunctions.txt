@@ -6,7 +6,7 @@ Makefile   ONGOING (only add fuctions if they're right)
 
 ======================   PART 1   ==========================
 
-19/23
+20/23
 
 isalpha    **
 isdigit    **
@@ -15,7 +15,7 @@ isascii    **
 isprint    **
 strlen     **
 memset     **
-bzero
+bzero      X
 memcpy     **
 memmove    **
 strlcpy    **
@@ -26,7 +26,7 @@ strchr     **
 strrchr    **
 strncmp    **
 memchr     **
-memcmp     X
+memcmp     **
 strnstr    **
 atoi       **
 calloc
