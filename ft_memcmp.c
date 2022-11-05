@@ -1,29 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: imendonc <imendonc@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/04 17:28:24 by imendonc          #+#    #+#             */
-/*   Updated: 2022/11/05 14:02:54 by imendonc         ###   ########.fr       */
+/*   Created: 2022/11/05 14:43:47 by imendonc          #+#    #+#             */
+/*   Updated: 2022/11/05 14:45:36 by imendonc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+//string.h
+
 #include "libft.h"
 
-void	*ft_memcpy(void *dest, const void *src, size_t n)
+int ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	char		*desti;
-	const char	*srci;
-
-	desti = (char *)dest;
-	srci = (const char *)src;
-	if ((dest == src) || n == 0)
-		return (dest);
-	if (!dest && !src)
-		return (0);
-	while (n--)
-		desti[n] = srci[n];
-	return (dest);
+    
 }

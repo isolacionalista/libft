@@ -1,29 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: imendonc <imendonc@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/04 17:28:24 by imendonc          #+#    #+#             */
-/*   Updated: 2022/11/05 14:02:54 by imendonc         ###   ########.fr       */
+/*   Created: 2022/11/05 14:15:59 by imendonc          #+#    #+#             */
+/*   Updated: 2022/11/05 14:40:58 by imendonc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+//The memchr() function scans the initial n bytes of the memory 
+//area pointed to by s for the first instance of c.
+//Both c and the bytes of the memory area pointed to by s 
+//are interpreted as unsigned char.
+//string.h
 #include "libft.h"
 
-void	*ft_memcpy(void *dest, const void *src, size_t n)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	char		*desti;
-	const char	*srci;
+	const char	*s1;
+	size_t		i;
 
-	desti = (char *)dest;
-	srci = (const char *)src;
-	if ((dest == src) || n == 0)
-		return (dest);
-	if (!dest && !src)
-		return (0);
-	while (n--)
-		desti[n] = srci[n];
-	return (dest);
+	s1 = (const char *)s;
+	i = 0;
+	while (i < n)
+	{
+		if (s1[i] == c)
+			return ((void *)(s + i));
+		i++;
+	}
+	return (0);
 }

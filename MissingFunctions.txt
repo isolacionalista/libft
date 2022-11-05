@@ -1,3 +1,13 @@
+
+
+
+libft.h    ONGOING (watch out for the norm)
+Makefile   ONGOING (only add fuctions if they're right)
+
+======================   PART 1   ==========================
+
+19/23
+
 isalpha    **
 isdigit    **
 isalnum    **
@@ -7,7 +17,7 @@ strlen     **
 memset     **
 bzero
 memcpy     **
-memmove    X
+memmove    **
 strlcpy    **
 strlcat    **
 toupper    **
@@ -15,15 +25,16 @@ tolower    **
 strchr     **
 strrchr    **
 strncmp    **
-memchr
-memcmp
+memchr     **
+memcmp     X
 strnstr    **
 atoi       **
 calloc
 strdup
 
-Makefile   **
-libft.h    ONGOING (watch out for the norm)
+======================   PART 2   ==========================
+
+0/11
 
 substr
 strjoin
@@ -36,3 +47,19 @@ putchar_fd
 putstr_fd
 putendl_fd
 putnbr_fd
+
+
+======================   BONUS   ==========================
+
+0/9
+
+ft_lstnew
+ft_lstdelone
+ft_lstadd_front
+ft_lstadd_back
+ft_lstsize
+ft_lstiter
+ft_lstmap
+ft_lstlast
+
+
