@@ -6,7 +6,7 @@
 /*   By: imendonc <imendonc@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 23:45:27 by imendonc          #+#    #+#             */
-/*   Updated: 2022/11/07 13:48:09 by imendonc         ###   ########.fr       */
+/*   Updated: 2022/11/07 14:47:18 by imendonc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,6 @@ char		*ft_strdup(const char *s);
 
 //numeros
 int			ft_atoi(char *string);
-int			*ft_itoa(int n);
 void		ft_bzero(void *s, size_t n);
 
 //mem
@@ -65,5 +64,6 @@ void		*ft_calloc(size_t nmemb, size_t size);
 void		ft_putchar_fd(char c, int fd);
 void		ft_putnbr_fd(int n, int fd);
 void		ft_putstr_fd(char *c, int fd);
+char		*ft_itoa(int n);
 
 #endif
