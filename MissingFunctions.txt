@@ -38,7 +38,7 @@ strdup     **
 
 ==========================  ONGOING -- PART 2 -- ONGOING  ==========================
 
-0/11
+1/11
 
 substr
 strjoin
@@ -47,10 +47,10 @@ split
 itoa       X
 strmapi
 striteri
-putchar_fd
-putstr_fd
+putchar_fd **
+putstr_fd  X
 putendl_fd
-putnbr_fd
+putnbr_fd  **
 
 -------------------------------------------------------------------------------
 
