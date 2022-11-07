@@ -38,7 +38,7 @@ strdup     **
 
 ==========================  ONGOING -- PART 2 -- ONGOING  ==========================
 
-4/11
+5/11
 
 substr
 strjoin    **
@@ -49,7 +49,7 @@ strmapi
 striteri
 putchar_fd **
 putstr_fd  **
-putendl_fd
+putendl_fd **
 putnbr_fd  **
 
 -------------------------------------------------------------------------------
