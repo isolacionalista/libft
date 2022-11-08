@@ -6,7 +6,7 @@
 /*   By: imendonc <imendonc@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 23:45:27 by imendonc          #+#    #+#             */
-/*   Updated: 2022/11/07 16:01:41 by imendonc         ###   ########.fr       */
+/*   Updated: 2022/11/07 16:13:33 by imendonc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,6 @@
 # include <stdlib.h>
 # include <string.h>
 # include <stddef.h>
-
-//definir a estrutura
-//typedef struct s_list
-//{
-//    void    *content;
-//    struct s_list *next;
-//}                 t_list;
 
 //prototipos
 //is de ctype.h
@@ -67,5 +60,6 @@ void		ft_putstr_fd(char *c, int fd);
 char		*ft_itoa(int n);
 char		*ft_strjoin(const char *s1, const char *s2);
 void		ft_putendl_fd(char *s, int fd);
+char		*ft_substr(char const *s, unsigned int start, size_t len);
 
 #endif

@@ -38,13 +38,13 @@ strdup     **
 
 ==========================  ONGOING -- PART 2 -- ONGOING  ==========================
 
-5/11
+6/11
 
-substr
+substr     **
 strjoin    **
 strtrim
 split
-itoa       X
+itoa       
 strmapi
 striteri
 putchar_fd **
