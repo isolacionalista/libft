@@ -6,7 +6,7 @@
 /*   By: imendonc <imendonc@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 23:45:27 by imendonc          #+#    #+#             */
-/*   Updated: 2022/11/08 14:06:07 by imendonc         ###   ########.fr       */
+/*   Updated: 2022/11/08 18:17:05 by imendonc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,5 +62,6 @@ char		*ft_strjoin(const char *s1, const char *s2);
 void		ft_putendl_fd(char *s, int fd);
 char		*ft_substr(char const *s, unsigned int start, size_t len);
 char		*ft_strtrim(const char *s1, const char *set);
+char		*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 
 #endif
