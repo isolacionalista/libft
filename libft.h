@@ -6,7 +6,7 @@
 /*   By: imendonc <imendonc@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 23:45:27 by imendonc          #+#    #+#             */
-/*   Updated: 2022/11/08 19:03:21 by imendonc         ###   ########.fr       */
+/*   Updated: 2022/11/09 13:32:37 by imendonc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,5 +64,6 @@ char		*ft_substr(char const *s, unsigned int start, size_t len);
 char		*ft_strtrim(const char *s1, const char *set);
 char		*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void		ft_striteri(char *s, void (*f)(unsigned int, char*));
+char		**ft_split(char const *s, char c);
 
 #endif
