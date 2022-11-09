@@ -6,7 +6,7 @@
 #    By: imendonc <imendonc@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/28 00:34:41 by imendonc          #+#    #+#              #
-#    Updated: 2022/11/08 17:06:19 by imendonc         ###   ########.fr        #
+#    Updated: 2022/11/09 11:52:24 by imendonc         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,8 @@ SRCS		= ft_atoi.c ft_isalnum.c ft_isalpha.c ft_isascii.c\
 				ft_memset.c ft_memcpy.c ft_memchr.c ft_memcmp.c\
 				ft_bzero.c ft_calloc.c ft_strdup.c ft_putchar_fd.c\
 				ft_putnbr_fd.c ft_putstr_fd.c ft_strjoin.c\
-				ft_putendl_fd.c ft_substr.c ft_strtrim.c ft_strmapi.c
+				ft_putendl_fd.c ft_substr.c ft_strtrim.c ft_strmapi.c\
+				ft_striteri.c
 
 #conversao de ficheiros c em objectos
 OBJS		= $(SRCS:.c=.o)
