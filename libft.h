@@ -6,7 +6,7 @@
 /*   By: imendonc <imendonc@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 23:45:27 by imendonc          #+#    #+#             */
-/*   Updated: 2022/11/09 13:32:37 by imendonc         ###   ########.fr       */
+/*   Updated: 2022/11/10 15:56:41 by imendonc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,13 @@
 # include <stdlib.h>
 # include <string.h>
 # include <stddef.h>
+
+//estrutura do bonus
+typedef struct	s_list
+{
+ 	void			*content;
+ 	struct s_list	*next;
+}		t_list;
 
 //prototipos
 //is de ctype.h
@@ -65,5 +72,8 @@ char		*ft_strtrim(const char *s1, const char *set);
 char		*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void		ft_striteri(char *s, void (*f)(unsigned int, char*));
 char		**ft_split(char const *s, char c);
+
+//listas e structs
+t_list		*ft-lstnew(void *content);
 
 #endif

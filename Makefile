@@ -6,7 +6,7 @@
 #    By: imendonc <imendonc@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/28 00:34:41 by imendonc          #+#    #+#              #
-#    Updated: 2022/11/09 13:27:53 by imendonc         ###   ########.fr        #
+#    Updated: 2022/11/10 15:52:26 by imendonc         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,6 +26,10 @@ SRCS		= ft_atoi.c ft_isalnum.c ft_isalpha.c ft_isascii.c\
 #conversao de ficheiros c em objectos
 OBJS		= $(SRCS:.c=.o)
 
+BOBJS		= ft_lstnew.c
+
+BOBJS		= $(BSRC:.c=.o)
+
 
 #definir qual o compiler
 CC				= gcc
@@ -42,19 +46,22 @@ ARCHIVE			= ar -rc
 #			$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRC)
 #			gcc -nostartfiles -shared -o libft.so $(OBJ)		
 #
-all:		$(NAME)
+all:		$(NAME) $(BOBJS)
 
 $(NAME):	$(OBJS)
 				ar rcs $(NAME) $(OBJS)
 
 clean:			
-			$(RM) $(OBJS)
+			$(RM) $(OBJS) ${BOBJS)
 
 fclean: 	clean
 				$(RM) $(NAME)
 
 re:				fclean all $(NAME)
 
-.PHONY:		all clean fclean re 
+bonus:		$(OBJS) $(BOBJS)
+				ar rcs $(NAME) $(OBJS) $(BOBJS)
+
+.PHONY:		all clean fclean re bonus 
 
 
