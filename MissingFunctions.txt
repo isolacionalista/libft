@@ -38,12 +38,12 @@ strdup     **
 
 ==========================  ONGOING -- PART 2 -- ONGOING  ==========================
 
-10/11
+11/11
 
 substr     **
 strjoin    **
 strtrim    **
-split
+split      **
 itoa       **
 strmapi    **
 striteri   **
