@@ -21,12 +21,13 @@ SRCS		= ft_atoi.c ft_isalnum.c ft_isalpha.c ft_isascii.c\
 				ft_bzero.c ft_calloc.c ft_strdup.c ft_putchar_fd.c\
 				ft_putnbr_fd.c ft_putstr_fd.c ft_strjoin.c\
 				ft_putendl_fd.c ft_substr.c ft_strtrim.c ft_strmapi.c\
-				ft_striteri.c ft_itoa.c ft_split.c
+				ft_striteri.c ft_itoa.c ft_split.c ft_lstnew.c\
+				ft_lstlast.c ft_lstsize.c
 
 #conversao de ficheiros c em objectos
 OBJS		= $(SRCS:.c=.o)
 
-BOBJS		= ft_lstnew.c
+BSRC		= ft_lstnew.c ft_lstlast.c
 
 BOBJS		= $(BSRC:.c=.o)
 
@@ -52,7 +53,7 @@ $(NAME):	$(OBJS)
 				ar rcs $(NAME) $(OBJS)
 
 clean:			
-			$(RM) $(OBJS) ${BOBJS)
+			$(RM) $(OBJS) $(BOBJS)
 
 fclean: 	clean
 				$(RM) $(NAME)
@@ -60,8 +61,8 @@ fclean: 	clean
 re:				fclean all $(NAME)
 
 bonus:		$(OBJS) $(BOBJS)
-				ar rcs $(NAME) $(OBJS) $(BOBJS)
 
+				ar rcs $(NAME) $(OBJS) $(BOBJS)
 .PHONY:		all clean fclean re bonus 
 
 

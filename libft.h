@@ -6,7 +6,7 @@
 /*   By: imendonc <imendonc@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 23:45:27 by imendonc          #+#    #+#             */
-/*   Updated: 2022/11/10 15:56:41 by imendonc         ###   ########.fr       */
+/*   Updated: 2022/11/14 16:32:58 by imendonc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,11 @@
 # include <stddef.h>
 
 //estrutura do bonus
-typedef struct	s_list
+typedef struct s_list
 {
- 	void			*content;
- 	struct s_list	*next;
-}		t_list;
+	void			*content;
+	struct s_list	*next;
+}				t_list;
 
 //prototipos
 //is de ctype.h
@@ -74,6 +74,9 @@ void		ft_striteri(char *s, void (*f)(unsigned int, char*));
 char		**ft_split(char const *s, char c);
 
 //listas e structs
-t_list		*ft-lstnew(void *content);
+t_list		*ft_lstnew(void *content);
+t_list		*ft_lstlast(t_list *lst);
+int			ft_lstsize(t_list *lst);
+void		ft_lstclear(t_list **lst, void (*del)(void *));
 
 #endif
