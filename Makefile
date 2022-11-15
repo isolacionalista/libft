@@ -22,7 +22,7 @@ SRCS		= ft_atoi.c ft_isalnum.c ft_isalpha.c ft_isascii.c\
 				ft_putnbr_fd.c ft_putstr_fd.c ft_strjoin.c\
 				ft_putendl_fd.c ft_substr.c ft_strtrim.c ft_strmapi.c\
 				ft_striteri.c ft_itoa.c ft_split.c ft_lstnew.c\
-				ft_lstlast.c ft_lstsize.c
+				ft_lstlast.c ft_lstsize.c ft_lstiter.c
 
 #conversao de ficheiros c em objectos
 OBJS		= $(SRCS:.c=.o)

@@ -6,7 +6,7 @@
 /*   By: imendonc <imendonc@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 14:02:40 by imendonc          #+#    #+#             */
-/*   Updated: 2022/11/08 17:05:44 by imendonc         ###   ########.fr       */
+/*   Updated: 2022/11/15 11:47:10 by imendonc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,3 +50,14 @@ char	*ft_strtrim(char const *s1, char const *set)
 	trim_str[i] = 0;
 	return (trim_str);
 }
+
+//#include <stdio.h>
+//
+//
+//int main()
+//{
+//	char s1[] = "ola eu sou isto";
+//	char set[] = "";
+//
+//	printf("%s", ft_strtrim(s1, set));
+//}

@@ -78,6 +78,6 @@ t_list		*ft_lstnew(void *content);
 t_list		*ft_lstlast(t_list *lst);
 int			ft_lstsize(t_list *lst);
 void		ft_lstclear(t_list **lst, void (*del)(void *));
-void		ft_lstiteri(t_list *lst, void (*f)(void *));
+void		ft_lstiter(t_list *lst, void (*f)(void *));
 
 #endif
