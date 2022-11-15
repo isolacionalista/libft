@@ -56,12 +56,12 @@ putnbr_fd  **
 
 ==========================   BONUS   ==========================
 
-4/9
+5/9
 
 ft_lstnew  **
 ft_lstdelone
-ft_lstadd_front
-ft_lstadd_back
+ft_lstadd_front **
+ft_lstadd_back  X
 ft_lstsize **
 ft_lstiter **
 ft_lstmap
