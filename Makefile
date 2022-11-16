@@ -21,14 +21,13 @@ SRCS		= ft_atoi.c ft_isalnum.c ft_isalpha.c ft_isascii.c\
 				ft_bzero.c ft_calloc.c ft_strdup.c ft_putchar_fd.c\
 				ft_putnbr_fd.c ft_putstr_fd.c ft_strjoin.c\
 				ft_putendl_fd.c ft_substr.c ft_strtrim.c ft_strmapi.c\
-				ft_striteri.c ft_itoa.c ft_split.c ft_lstnew.c\
-				ft_lstlast.c ft_lstsize.c ft_lstiter.c ft_lstadd_front.c\
-				ft_lstadd_back.c ft_lstclear.c
+				ft_striteri.c ft_itoa.c ft_split.c 
 
 #conversao de ficheiros c em objectos
 OBJS		= $(SRCS:.c=.o)
 
-BSRC		= ft_lstnew.c ft_lstlast.c
+BSRC		= ft_lstnew.c ft_lstlast.c ft_lstsize.c ft_lstiter.c ft_lstadd_front.c\
+				ft_lstadd_back.c ft_lstclear.c ft_lstdelone.c ft_lstmap.c
 
 BOBJS		= $(BSRC:.c=.o)
 
@@ -44,10 +43,6 @@ NAME		= libft.a
 ARCHIVE			= ar -rc
 
 #definir os comandos para não entraram em conflito com outros
-#so:
-#			$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRC)
-#			gcc -nostartfiles -shared -o libft.so $(OBJ)		
-#
 all:		$(NAME) $(BOBJS)
 
 $(NAME):	$(OBJS)

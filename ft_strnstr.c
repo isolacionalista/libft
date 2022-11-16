@@ -6,7 +6,7 @@
 /*   By: imendonc <imendonc@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 15:28:23 by imendonc          #+#    #+#             */
-/*   Updated: 2022/11/04 14:47:27 by imendonc         ###   ########.fr       */
+/*   Updated: 2022/11/16 11:51:29 by imendonc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strnstr(const char *str, const char *str2, size_t lenght)
 
 	if (!str || !str2)
 		return ((char *)str);
-	if (!str2)
+	else if (!str2)
 		return ((char *)str2);
 	a = 0;
 	while (str[a] && a < lenght)
